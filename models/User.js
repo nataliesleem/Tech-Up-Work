@@ -43,6 +43,15 @@ User.init(
         type: DataTypes.BOOLEAN,
         allowNull: false,
         defaultValue: 1 //available by default
+      },
+      chargePerHour: {
+          type: DataTypes.FLOAT,
+          allowNull: false,
+          defaultValue: 0
+      },
+      skillSet: {
+          type: DataTypes.JSON,
+          allowNull: false
       }
     },
 
