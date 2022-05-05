@@ -36,5 +36,14 @@ Project.init(
             type: DataTypes.JSON,
             allowNull: false
         }
-    }
+    },
+        {   
+            sequelize,
+            timestamps: false,
+            freezeTableName: true,
+            underscored: true,
+            modelName: 'project'
+        }
 )
+
+module.exports = project;
